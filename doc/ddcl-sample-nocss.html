@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>jQuery Dropdown CheckList Minimal Sample</title>
+
+    <link rel="stylesheet" type="text/css" href="ui.dropdownchecklist.standalone.css">
+
+    <!-- Include the basic JQuery support (core and ui) -->
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.2.custom.min.js"></script>
+    
+    <!-- Include the DropDownCheckList support -->
+    <script type="text/javascript" src="ui.dropdownchecklist-1.5-min.js"></script>
+    
+    <!-- Apply dropdown check list to the selected items  -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#s1").dropdownchecklist();
+        });
+    </script>
+    <meta name="description" 
+        content="The Dropdown Check List jQuery widget transforms a regular select html element into a dropdown checkbox list">
+    <meta name="keywords" 
+        content="dropdown, checkbox list, jquery, widget, themeroller, plugin, html multiple select">
+</head>
+<body>
+<div id="content">
+    <h1>jQuery <em>Dropdown Check List</em></h1>
+    <p>
+        The <i>Dropdown CheckList</i> jQuery widget transforms a regular &lt;SELECT&gt; html element into a 
+        combo box with a text display of the selected elements and a dropdown of options. The plugin is hosted on 
+        <a href="https://sourceforge.net/projects/dropdownchecklist/">SourceForge</a>.
+    </p>
+    <p>
+    	This page includes the minimal components needed to activate DDCL and applies minimal styling.
+    </p>
+    <table>
+    	<tr>
+    		<td>
+    			<code>
+			        &lt;select id="s1" multiple="multiple"&gt;
+			            &lt;option&gt;Low&lt;/option&gt;
+			            &lt;option&gt;Medium&lt;/option&gt;
+			            &lt;option&gt;High&lt;/option&gt;
+			        &lt;/select>
+    			</code>
+    		</td>
+		    <td>
+		    	<code>
+		            &lt;script&gt;$(document).ready(function() {
+		                $("#s1").dropdownchecklist();
+		            });&lt;/script&gt;
+		        </code>
+		    </td>
+		</tr>
+		<tr>
+			<td>
+				A standard SELECT: 
+		        <select multiple="multiple">
+		            <option>Low</option>
+		            <option>Medium</option>
+		            <option>High</option>
+		        </select>
+			</td>
+			<td>
+				A DDCL SELECT:
+		        <select id="s1" multiple="multiple">
+		            <option>Low</option>
+		            <option>Medium</option>
+		            <option>High</option>
+		        </select>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
